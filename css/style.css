@@ -145,7 +145,6 @@ nav {
   left: 0;
   position: fixed;
   opacity: 0.8;
-  z-index: 2;
   cursor: pointer;
 }
 
@@ -156,6 +155,27 @@ nav {
 #topvideo video {
   display: block;
   width: 100%;
-  z-index: 1;
+  padding: 0 0 90px 0;
+}
+
+#pickup {
+  display: block;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 0 50px 0;
+  z-index: 2;
+}
+
+#pickup h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 34px;
+}
+
+#pickup .slider img {
+  max-width: 100%;
+  padding: 0 30px;
 }
 /*# sourceMappingURL=style.css.map */

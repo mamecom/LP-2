@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+// 各変数
+$menu-font-size: 14.4px;
+
+// ヘッダー
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 30px 14px 40px;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    background-color: #121212;
+    width: 300px;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+}
+.inner {
+    padding: 60px 25px 25px 25px;   
+
+    ul:first-child {
+        list-style: none;
+        margin: 0 0 60px 0;
+        padding: 0;
+
+        li:first-child {
+            border-top:1px solid #FFF;
+        }
+
+        li {
+            margin: 0;
+            padding: 21px 0;
+            border-bottom:1px solid #FFF;
+            a {
+                display: block;
+                color: #fff;
+                font-size: $menu-font-size;
+                text-decoration: none;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    ul:last-child{
+        li {
+            padding: 5px 0;
+            a {
+                font-size: $menu-font-size;
+                list-style: none;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// ハンバーガーメニューを開く前
+.toggle-btn {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    cursor: pointer;
+
+
+    span {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        transition: all 0.5s;
+        border-radius: 4px;
+    }
+    :nth-child(1) {
+        top: 4px;
+    }
+    :nth-child(2) {
+        top: 14px;
+    }
+    :nth-child(3) {
+        bottom: 4px;
+    }
+}
+
+#mask {
+    display: none;
+    transition: all 0.5s;
+}
+
+// ハンバーガーメニューを開いた時
+.open {
+    nav {
+        left: 0;
+        opacity: 1;
+    }
+    .toggle-btn {
+        span {
+            background-color: #fff;
+        }
+        :nth-child(1) {
+            transform: translateY(10px) rotate(-315deg);
+        }
+        :nth-child(2) {
+            opacity: 0;
+        }
+        :nth-child(3) {
+            transform: translateY(-10px) rotate(315deg);
+        }
+    }
+    #mask {
+        display: block;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        opacity: 0.8;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+

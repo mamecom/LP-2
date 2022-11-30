@@ -1,31 +1,39 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="img/logo.svg">
     <title>Sneakers</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
+<body class="body">
+<header id="header">
     <div>
-        <img src="img/logo.svg">
-        <div class="nav">
-            <input id="drawer_input" class="drawer_hidden" type="checkbox">
-            <label for="drawer_input" class="drawer_open"><span></span></label>
-            <nav class="nav_content">
-                <ul class="nav_list">
-                    <hr>
-                    <li class="nav_item"><a href="">PICK UP</a></li>
-                    <hr>
-                    <li class="nav_item"><a href="">FEATURE</a></li>
-                    <hr>
-                    <li class="nav_item"><a href="">CONTACT</a></li>
-                    <hr>
-                    <li class="nav_item"><a href="https://twitter.com/?lang=ja">Twitter</a></li>
-                    <li class="nav_item"><a href="https://www.facebook.com/">facebook</a></li>
-                    <li class="nav_item"><a href="https://www.instagram.com/">instagram</a></li>
-            </nav>
+        <a href="index.html"><img src="img/logo.svg"></a>
+    </div>
+    <div id="navArea">
+        <nav class="inner">
+            <ul>
+                <li><a href="">PICK UP</a></li>
+                <li><a href="">FEATURE</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            <ul>
+                <li class="sns"><a href="https://twitter.com/?lang=ja">Twitter</a></li>
+                <li class="sns"><a href="https://www.facebook.com/">facebook</a></li>
+                <li class="sns"><a href="https://www.instagram.com/">instagram</a></li>
+            </ul>
+        </nav>
+
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
     </div>
 </header>
 <main>
@@ -236,6 +244,9 @@
 <footer>
     © Sneakers
 </footer>
+
+<script src="main.js" defer></script>
+
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 
 // 各変数
 $menu-font-size: 14.4px;
+$section-font-size: 36px;
 
 // ヘッダー
 #header {
@@ -152,11 +153,11 @@ nav {
     display: block;
     width: 100%;
     justify-content: center;
-    padding: 25px 0 50px 0;
+    padding: 25px 0 130px 0;
     z-index: 2;
     h2 {
         text-align: center;
-        font-size: 36px;
+        font-size: $section-font-size;
         margin-bottom: 34px;
     }
 
@@ -165,5 +166,53 @@ nav {
             max-width: 100%;
             padding: 0 30px;
         }
+    }
+}
+
+#feature {
+    display: block;
+    max-width: 1240px;
+    padding: 20px 16px 50px 16px;
+    margin: -50px auto 10px auto;
+    h2 {
+        text-align: center;
+        font-size: $section-font-size;
+        margin-bottom: 35px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+
+        .card-item {
+            background-size: cover;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px 5px rgb(201, 201, 201);
+            
+            img {
+                width: 100%;
+            }
+
+            .card-content{
+                padding: 25px 30px;
+
+                .title {
+                    font-size: 12px;
+                    margin-bottom: 25px;
+                }
+
+                .text {
+                    font-size: 14.4px;
+                    font-weight: bold;
+                    margin-bottom: 25px;
+                }
+
+                .date {
+                    font-size: 12px;
+                    text-align: right;
+                }
+            }
+        }            
     }
 }

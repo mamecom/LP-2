@@ -164,7 +164,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 25px 0 50px 0;
+  padding: 25px 0 130px 0;
   z-index: 2;
 }
 
@@ -177,5 +177,58 @@ nav {
 #pickup .slider img {
   max-width: 100%;
   padding: 0 30px;
+}
+
+#feature {
+  display: block;
+  max-width: 1240px;
+  padding: 20px 16px 50px 16px;
+  margin: -50px auto 10px auto;
+}
+
+#feature h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+#feature .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+#feature .grid-container .card-item {
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 0 10px 5px #c9c9c9;
+          box-shadow: 0 0 10px 5px #c9c9c9;
+}
+
+#feature .grid-container .card-item img {
+  width: 100%;
+}
+
+#feature .grid-container .card-item .card-content {
+  padding: 25px 30px;
+}
+
+#feature .grid-container .card-item .card-content .title {
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+#feature .grid-container .card-item .card-content .text {
+  font-size: 14.4px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#feature .grid-container .card-item .card-content .date {
+  font-size: 12px;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

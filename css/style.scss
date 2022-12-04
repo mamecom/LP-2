@@ -193,6 +193,16 @@ nav {
             img {
                 width: 100%;
             }
+            .fadein{
+                opacity: 0;
+                transform: translate(0, 30px);
+                transition: all 800ms;
+                
+            }
+            .fadein.is-fadein {
+                opacity: 1;
+                transform: translate(0);
+            }
 
             .card-content{
                 padding: 25px 30px;
@@ -214,5 +224,26 @@ nav {
                 }
             }
         }            
+    }
+}
+
+#contact {
+    background-color: #000;
+    color: #fff;
+
+    h2 {
+        text-align: center;
+        font-size: $section-font-size;
+        padding: 50px;
+    }
+
+    .contact-text {
+        text-align: left;
+        width: 45%;
+    }
+
+    .contact-form {
+        width: 45%;
+        text-align: right;
     }
 }

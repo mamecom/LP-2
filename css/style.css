@@ -212,6 +212,20 @@ nav {
   width: 100%;
 }
 
+#feature .grid-container .card-item .fadein {
+  opacity: 0;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
+}
+
+#feature .grid-container .card-item .fadein.is-fadein {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
 #feature .grid-container .card-item .card-content {
   padding: 25px 30px;
 }
@@ -229,6 +243,27 @@ nav {
 
 #feature .grid-container .card-item .card-content .date {
   font-size: 12px;
+  text-align: right;
+}
+
+#contact {
+  background-color: #000;
+  color: #fff;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 36px;
+  padding: 50px;
+}
+
+#contact .contact-text {
+  text-align: left;
+  width: 45%;
+}
+
+#contact .contact-form {
+  width: 45%;
   text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

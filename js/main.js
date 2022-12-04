@@ -12,11 +12,11 @@ mask.onclick = () => {
 };
 
 // スムーススクロール
-var headerHeight = $('header').outerHeight();
+let headerHeight = $('header').outerHeight();
 $('a[href^="#"]').click(function() {
-    var href= $(this).attr("href");
-    var target = $(href);
-    var position = target.offset().top - headerHeight;
+    let href= $(this).attr("href");
+    let target = $(href);
+    let position = target.offset().top - headerHeight;
     $('body,html').stop().animate({scrollTop:position}, 300);   
     nav.classList.toggle("open");
     return false;
@@ -50,4 +50,36 @@ $(function() {
 			}
 		}]
 	});
+});
+
+// $(function() {
+//   $(window).scroll(function () {
+//     const windowHeight = $(window).height();
+//     const scroll = $(window).scrollTop();
+//     let buffer;
+//     if ($(window).width() > 768) {
+//       buffer = 300;
+//     } else {
+//       buffer = 100;
+//     }
+
+//     $('.fadein').each(function () {
+//       const targetPosition = $(this).offset().top;
+//       if (scroll > targetPosition - windowHeight + 100) {
+//         $(this).addClass("is-fadein");
+//       }
+//     });
+//   });
+// });
+$(function() {
+  $(window).scroll(function () {
+    $('.fadein').each(function () {
+      let targetElement = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
+        if (scroll > targetElement - windowHeight + 200) {
+          $(this).addClass("is-fadein");
+        }
+    });
+  });
 });

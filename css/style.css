@@ -314,6 +314,11 @@ nav {
   padding: 13px;
 }
 
+#contact .contact-form .button input:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 #footer {
   text-align: center;
   color: #fff;

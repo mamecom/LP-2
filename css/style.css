@@ -249,21 +249,76 @@ nav {
 #contact {
   background-color: #000;
   color: #fff;
+  padding: 50px 0;
 }
 
 #contact h2 {
   text-align: center;
   font-size: 36px;
-  padding: 50px;
+  margin-bottom: 30px;
+}
+
+#contact .contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 330px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
 }
 
 #contact .contact-text {
-  text-align: left;
   width: 45%;
+}
+
+#contact .contact-text p {
+  font-size: 14.4px;
+  margin-bottom: 30px;
 }
 
 #contact .contact-form {
   width: 45%;
-  text-align: right;
+}
+
+#contact .contact-form label {
+  font-size: 14.4px;
+}
+
+#contact .contact-form dd input {
+  width: 100%;
+  border: solid 1px #fff;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14.4px;
+}
+
+#contact .contact-form dd textarea {
+  width: 100%;
+  border: solid 1px #fff;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14.4px;
+}
+
+#contact .contact-form .button input {
+  width: 200px;
+  border: solid 1px #fff;
+  font-size: 14.4px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 13px;
+}
+
+#footer {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: #000;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -52,25 +52,6 @@ $(function() {
 	});
 });
 
-// $(function() {
-//   $(window).scroll(function () {
-//     const windowHeight = $(window).height();
-//     const scroll = $(window).scrollTop();
-//     let buffer;
-//     if ($(window).width() > 768) {
-//       buffer = 300;
-//     } else {
-//       buffer = 100;
-//     }
-
-//     $('.fadein').each(function () {
-//       const targetPosition = $(this).offset().top;
-//       if (scroll > targetPosition - windowHeight + 100) {
-//         $(this).addClass("is-fadein");
-//       }
-//     });
-//   });
-// });
 $(function() {
   $(window).scroll(function () {
     $('.fadein').each(function () {

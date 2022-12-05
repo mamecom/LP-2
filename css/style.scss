@@ -1,14 +1,11 @@
 @charset "UTF-8";
 
-// 各変数
-$menu-font-size: 14.4px;
+$font-size: 14.4px;
 $section-font-size: 36px;
 
 // ヘッダー
 #header {
     display: flex;
-    align-items: center;
-    justify-content: center;
     justify-content: space-between;
     padding: 20px 30px 14px 40px;
     background-color: #fff;
@@ -48,7 +45,7 @@ nav {
             a {
                 display: block;
                 color: #fff;
-                font-size: $menu-font-size;
+                font-size: $font-size;
                 text-decoration: none;
                 transition-duration: 0.2s;
             }
@@ -58,7 +55,7 @@ nav {
         li {
             padding: 5px 0;
             a {
-                font-size: $menu-font-size;
+                font-size: $font-size;
                 list-style: none;
                 text-decoration: none;
                 color: #fff;
@@ -213,7 +210,7 @@ nav {
                 }
 
                 .text {
-                    font-size: $menu-font-size;
+                    font-size: $font-size;
                     font-weight: bold;
                     margin-bottom: 25px;
                 }
@@ -249,7 +246,7 @@ nav {
         width: 45%;
 
         p {
-            font-size: $menu-font-size;
+            font-size: $font-size;
             margin-bottom: 30px;
         }
     }
@@ -258,7 +255,7 @@ nav {
         width: 45%;
 
         label {
-            font-size: $menu-font-size;
+            font-size: $font-size;
         }
 
         dd input {
@@ -267,7 +264,7 @@ nav {
             background-color: #fff;
             padding: 10px;
             margin-bottom: 20px;
-            font-size: $menu-font-size;
+            font-size: $font-size;
         }
         dd textarea {
             width: 100%;
@@ -275,13 +272,13 @@ nav {
             background-color: #fff;
             padding: 10px;
             margin-bottom: 20px;
-            font-size: $menu-font-size;
+            font-size: $font-size;
         }
 
         .button input {
             width: 200px;
             border: solid 1px #fff;
-            font-size: $menu-font-size;
+            font-size: $font-size;
             color: #fff;
             background-color: #000;
             text-align: center;

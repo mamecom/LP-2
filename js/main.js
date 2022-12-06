@@ -1,7 +1,7 @@
 // ハンバーガーメニュー
-let nav = document.querySelector("#navArea");
-let btn = document.querySelector(".toggle-btn");
-let mask = document.querySelector("#mask");
+const nav = document.querySelector("#navArea");
+const btn = document.querySelector(".toggle-btn");
+const mask = document.querySelector("#mask");
 
 btn.onclick = () => {
   nav.classList.toggle("open");
@@ -12,11 +12,11 @@ mask.onclick = () => {
 };
 
 // スムーススクロール
-let headerHeight = $('header').outerHeight();
+const headerHeight = $('header').outerHeight();
 $('a[href^="#"]').click(function() {
-    let href= $(this).attr("href");
-    let target = $(href);
-    let position = target.offset().top - headerHeight;
+    const href= $(this).attr("href");
+    const target = $(href);
+    const position = target.offset().top - headerHeight;
     $('body,html').stop().animate({scrollTop:position}, 300);   
     nav.classList.toggle("open");
     return false;
@@ -32,20 +32,11 @@ $(function() {
 		// autoplaySpeed: 2000, //オートプレイの切り替わり時間
 		slidesToShow: 3, 
 		responsive: [{
-			breakpoint: 768,
+			breakpoint: 601,
 			settings: {
 				arrows: false, // 前後の矢印非表示
 				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 3
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
+				centerPadding: '50px',
 				slidesToShow: 1
 			}
 		}]
@@ -55,9 +46,9 @@ $(function() {
 $(function() {
   $(window).scroll(function () {
     $('.fadein').each(function () {
-      let targetElement = $(this).offset().top;
-      let scroll = $(window).scrollTop();
-      let windowHeight = $(window).height();
+      const targetElement = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowHeight = $(window).height();
         if (scroll > targetElement - windowHeight + 200) {
           $(this).addClass("is-fadein");
         }
